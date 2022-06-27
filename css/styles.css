@@ -96,12 +96,22 @@ ul {
 }
 .mail{
     color: var(--buttoncolor);
-    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+.mail-icon{
+    fill: currentColor;
+    width: 16px;
+    height:12px;
+    margin-right: 10px;
+}
+.mail:hover,.mail:focus{
+    fill: var(--logocolor);
+    stroke: var(--logocolor);
+    stroke-width: 2px;
 }
 .navigation-link.current{
     color: var(--logocolor);
-    
-    
 }
 .navigation-link{
     margin-left: 50px;
@@ -111,15 +121,36 @@ ul {
     margin-left: auto;
 }
 .tel{
+    display: flex;
+    align-items: center;
     color: var(--textcolor);
     margin-left: 50px;
+
 }
+.tel-icon{
+    fill: currentColor;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+.tel:hover,.tel:focus{
+    fill:var(--logocolor);
+    stroke: var(--logocolor);
+    stroke-width: 2px;
+}
+
 /* Main */
 
 .banner{
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/command.jpg');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: var(--footback);
+    
     font-weight:900;
     font-size: 44px;
     line-height:1.36;
