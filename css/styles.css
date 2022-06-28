@@ -15,6 +15,7 @@
     --buttonmenucolor:#212121;
     --border-bottom:#ECECEC;
     --iconcolor: #AFB1B8;
+    --iconhover:#2196F3;
 }
 body{
     font-family:'Roboto',sans-serif;
@@ -254,10 +255,6 @@ button{
 .feature-item{
     fill: currentColor;
 }
-.feature-item:hover,.feature-item:focus{
-    stroke: var(--logocolor);
-    stroke-width: 1px;
-}
 
 .features h3{
     color:var(--headtextcolor);
@@ -368,16 +365,23 @@ button{
     
 }
 .social-item{
+    display: flex;
+    width: 44px;
+    height: 44px;
     margin-right: 10px;
-    fill: var(--headback);
-    
-    
+    align-items: center;
+    justify-content: center;
+    background-color: var(--buttontext);
+    border-radius: 50%;
 }
 .social-icon{
     
 }
 .social-item:hover,.social-item:focus{
-    fill: var(--logocolor);
+    
+}
+.social-icon:hover,.social-icon:focus{
+    
 }
 .footer{
 background-color: var(--footback);
