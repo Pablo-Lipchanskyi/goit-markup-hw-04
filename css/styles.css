@@ -240,16 +240,21 @@ button{
     margin-right:30px;
 }
 .feature-icon{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
     height: 120px;
     background-color: var(--backforteamlist);
     margin-bottom: 30px;
+    
 }
-
-.feature-one{
-    display: flex;
-    width: 70px;
-    height: 70px;
+.feature-item{
+    fill: currentColor;
+}
+.feature-item:hover,.feature-item:focus{
+    stroke: var(--logocolor);
+    stroke-width: 1px;
 }
 
 .features h3{
@@ -346,7 +351,20 @@ button{
 }
 .name-prof{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
+}
+.social{
+    display: flex;
+    flex-basis: calc(100%/4);
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.social-links{
+    display: flex;
+    
+}
+.social-item{
+    margin-right: 10px;
 }
 .footer{
 background-color: var(--footback);
