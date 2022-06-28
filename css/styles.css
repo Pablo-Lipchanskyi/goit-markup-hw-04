@@ -375,13 +375,37 @@ button{
     border-radius: 50%;
 }
 .social-icon{
-    
+    fill: var(--iconcolor);
 }
 .social-item:hover,.social-item:focus{
+    background-color: var(--iconhover);
+    fill: var(--buttontext);
     
 }
-.social-icon:hover,.social-icon:focus{
+.client-header{
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+
+    color: var(--headtextcolor);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+.client-list{
+    display: flex;
+
     
+}
+.client-pozition{
+    display: flex;
+    border: 1px solid var(--iconcolor);
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
 }
 .footer{
 background-color: var(--footback);
