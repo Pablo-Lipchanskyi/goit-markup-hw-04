@@ -68,8 +68,8 @@ a {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--logocolor);
-    margin-top: 24px;
-    margin-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .studio{
@@ -98,30 +98,38 @@ a {
     margin-left: auto;
 }
 .mail{
-    color: var(--buttoncolor);
     display: flex;
     align-items: center;
 }
 .mail-icon{
-    fill: currentColor;
+    fill:var(--textcolor);
     width: 16px;
     height:12px;
     margin-right: 10px;
 }
 .mail:hover,.mail:focus{
-    fill: var(--logocolor);
     stroke: var(--logocolor);
     stroke-width: 2px;
 }
 .navigation-link.current{
     color: var(--logocolor);
 }
-.navigation-link{
+.menu>li:not(:first-child){
     margin-left: 50px;
+}
+.navigation-link:focus,.navigation-link:hover{
+    color: var(--logocolor);
 }
 .contact-list{
     margin-right: 0;
     margin-left: auto;
+}
+.mail:hover,.mail:focus{
+    color: var(--logocolor);
+}
+.tel:hover,
+.tel:focus {
+    color: var(--logocolor);
 }
 .tel{
     display: flex;
@@ -382,14 +390,11 @@ button{
     fill: var(--iconcolor);
 
 }
-.social-item:hover,.social-item:focus{
-    background-color: var(--iconhover);
-    
-    
-}
 .social-item>a:hover,
 .social-item>a:focus{
     fill: var(--buttontext);
+    background-color: var(--iconhover);
+    border-radius: 50%;
 }
 .client-header{
     margin-top: 0;
@@ -415,12 +420,15 @@ button{
     border: 1px solid var(--iconcolor);
     width: 170px;
     height: 92px;
-     
-    
-    
 }
 .client-pozition:not(:last-child){
     margin-right: 30px;
+}
+.client-pozition:hover{
+    border-color: var(--iconhover);
+}
+.client-pozition:focus{
+    border-color: var(--iconhover);
 }
 .client-pozition>a{
     display: flex;
@@ -434,6 +442,7 @@ button{
 }
 .client-pozition>a:hover,.client-pozition>a:focus{
     fill: var(--iconhover);
+    
 }
 .footer{
 display: flex;
@@ -483,6 +492,8 @@ padding-bottom: 60px;
 .links-container{
     padding: 0;
     margin-left: 70px;
+}  
+.links-container>h3{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -514,6 +525,10 @@ padding-bottom: 60px;
 }
 .links-item:hover,.links-item:focus{
     background-color: var(--iconhover);
+}
+.links-item>a:hover,.links-item>a:focus{
+    background-color: var(--iconhover);
+    border-radius: 50%;
 }
 .footer a:hover,
 .footer a:focus{
