@@ -379,12 +379,17 @@ button{
     height: 100%;
     align-items: center;
     justify-content: center;
+    fill: var(--iconcolor);
 
 }
 .social-item:hover,.social-item:focus{
     background-color: var(--iconhover);
-    fill: var(--buttontext);
     
+    
+}
+.social-item>a:hover,
+.social-item>a:focus{
+    fill: var(--buttontext);
 }
 .client-header{
     margin-top: 0;
@@ -410,7 +415,9 @@ button{
     border: 1px solid var(--iconcolor);
     width: 170px;
     height: 92px;
-    fill: currentColor;
+     
+    
+    
 }
 .client-pozition:not(:last-child){
     margin-right: 30px;
@@ -422,9 +429,10 @@ button{
     height: 100%;
     align-items: center;
     justify-content: center;
+    fill: var(--iconcolor);
 
 }
-.client-pozition:hover,.client-pozition:focus{
+.client-pozition>a:hover,.client-pozition>a:focus{
     fill: var(--iconhover);
 }
 .footer{
@@ -491,11 +499,18 @@ padding-bottom: 60px;
     margin-right: 10px;
     width: 44px;
     height: 44px;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    fill: var(--iconcolor);
+   
+}
+.links-item>a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    fill: var(--buttontext);
+
 }
 .links-item:hover,.links-item:focus{
     background-color: var(--iconhover);
