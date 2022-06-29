@@ -393,20 +393,29 @@ button{
 }
 .client-list{
     display: flex;
+    flex-basis: calc(100%/6);
     
 
     
 }
 .client-pozition{
-    display: inline-flex;
+    display:flex;
     border-radius: 4px;
     border: 1px solid var(--iconcolor);
     width: 170px;
     height: 92px;
+    fill: var(--iconcolor);
+}
+.client-pozition:not(:last-child){
     margin-right: 30px;
+}
+.client-pozition>a{
+    display: flex;
+    width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    fill: var(--iconcolor);
+
 }
 .client-pozition:hover,.client-pozition:focus{
     fill: var(--iconhover);
