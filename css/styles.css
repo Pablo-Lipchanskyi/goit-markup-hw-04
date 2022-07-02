@@ -332,6 +332,7 @@ button{
     line-height: 1.19;
     letter-spacing:0.03em;
     color: var(--textcolor);
+    margin-bottom: 16px;
 }
 .comm-header{
     color: var(--headtextcolor);
@@ -359,17 +360,15 @@ button{
 }
 .name-prof{
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
+    
 }
-.social{
-    display: flex;
-    flex-basis: calc(100%/4);
-    justify-content: center;
-}
+
 .social-links{
     display: flex;
     padding: 0;
-    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
     
     
 }
@@ -562,7 +561,7 @@ padding-bottom: 60px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    border-radius: 1px;
+    border-radius: 4px;
     border-color: var(--buttonnohover);
     padding: 6px 22px;
     border-width: 0px;
